@@ -34,13 +34,14 @@ int main(int argc, const char * argv[]) {
 	char option;
 	NSString *inputString;
 	BOOL keepGoing = YES;
+	NSString *canadianize = @", eh?";
 	
 	//Get a new String
 	inputString = ChangeString();
 	
 	//Loop it
 	do{
-		printf("What do you want to do with the string?:\n"
+		printf("\n\nWhat do you want to do with the string?:\n"
 			   "1. Uppercase\n"
 			   "2. Lowercase\n"
 			   "3. Numberize\n"
@@ -62,36 +63,61 @@ int main(int argc, const char * argv[]) {
 			//Make it Uppercase
 			case '1':
 				inputString = inputString.uppercaseString;
+				//Show the String after changing it
+				NSLog(@"Output is: %@", inputString);
 				break;
 			
-//			//Make it Lowercase
-//			case '2':
-//				<#statements#>
-//				break;
-//			
-//			//Numberize it
+			//Make it Lowercase
+			case '2':
+				inputString = inputString.lowercaseString;
+				//Show the String after changing it
+				NSLog(@"Output is: %@", inputString);
+				break;
+
+//			//Print out the length of the string
 //			case '3':
-//				<#statements#>
-//				break;
-//			
-//			//Canadianize it
-//			case '4':
-//				<#statements#>
-//				break;
 //				
-//			//Respond with multiple things depending on punctuation
-//			case '5':
-//				<#statements#>
 //				break;
-//			
-//			//Replace spaces with dashes
-//			case '6':
-//				<#statements#>
-//				break;
+
+			//Canadianize it
+			case '4':				
+				//remove /n from the NSString
+				inputString = [inputString stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+				//join the ", eh?" NSString to the inputString
+				inputString = [NSString stringWithFormat:@"%@%@", inputString, canadianize];
+				//Show the String after changing it
+				NSLog(@"Output is: %@", inputString);
+				break;
+
+			//Respond with multiple things depending on punctuation
+			case '5':
+				//remove /n from the NSString
+				inputString = [inputString stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+
+				if([inputString hasSuffix:@"?"]){
+					printf("I don't know...");
+				}
+				else if([inputString hasSuffix:@"!"]){
+					printf("Whoa, calm down!");
+				}
+				else{
+					printf("Add and ! or ? for a suprise!");
+				}
+				break;
+			
+			//Replace spaces with dashes
+			case '6':
+				inputString = [inputString stringByReplacingOccurrencesOfString:@" " withString:@"-"];
+				//Show the String after changing it
+				NSLog(@"Output is: %@", inputString);
+				break;
 			
 			//Change the String
 			case '7':
 				inputString = ChangeString();
+				//Show the String after changing it
+				NSLog(@"Output is: %@", inputString);
+
 				break;
 				
 			//Quit the program
@@ -105,8 +131,6 @@ int main(int argc, const char * argv[]) {
 				break;
 		}
 	
-		//Show the String after changing it
-		NSLog(@"Output is: %@", inputString);
 	//Check if repeating
 	}while (keepGoing);
 	
