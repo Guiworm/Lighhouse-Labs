@@ -74,13 +74,14 @@ int main(int argc, const char * argv[]) {
 				NSLog(@"Output is: %@", inputString);
 				break;
 
-//			//Print out the length of the string
-//			case '3':
-//				
-//				break;
+			//Print out the length of the string
+			case '3':
+				//Show the String after changing it
+				NSLog(@"Output is: %d", inputString.length);
+				break;
 
 			//Canadianize it
-			case '4':				
+			case '4':
 				//remove /n from the NSString
 				inputString = [inputString stringByReplacingOccurrencesOfString:@"\n" withString:@""];
 				//join the ", eh?" NSString to the inputString
