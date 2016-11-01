@@ -13,8 +13,8 @@ int main(int argc, const char * argv[]) {
 	@autoreleasepool {
 
 		Box *box1 = [[Box alloc] init];
-		box1.width = 1;
-		box1.height = 7;
+		box1.width = 11;
+		box1.height = 117;
 		box1.length = 2;
 		
 		Box *box2 = [[Box alloc] init];
