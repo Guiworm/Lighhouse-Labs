@@ -21,7 +21,7 @@
 	NSString *userText = [NSString stringWithCString:userInput
 											encoding:NSUTF8StringEncoding];
 	
-	return userText;
+	return [userText stringByTrimmingCharactersInSet: [NSCharacterSet whitespaceAndNewlineCharacterSet]];
 }
 
 

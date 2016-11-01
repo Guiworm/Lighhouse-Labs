@@ -8,27 +8,39 @@
 
 #import <Foundation/Foundation.h>
 #import "InputCollector.h"
+#import "ContactList.h"
+#import "Contact.h"
 
 int main(int argc, const char * argv[]) {
 	@autoreleasepool {
 		
 		//Variables
 		InputCollector *input = [[InputCollector alloc] init];
+		ContactList *allContacts = [[ContactList alloc] init];
+		
 		BOOL exit = NO;
 		
 		while(!exit){
-			NSString *result = [input inputForPrompt:@"What would you like to do?\n"
-																"new - Create new contact\n"
-																"list - List all contacts\n"
-																"quit - Exit application\n"];
-			if([result containsString:@"quit"]){
+			NSString *menuChoice = [input inputForPrompt:@"What would you like to do?\n"
+													"new - Create new contact\n"
+													"list - List all contacts\n"
+													"quit - Exit application\n"];
+			if([menuChoice containsString:@"quit"]){
 				exit = YES;
 			}
-			else if([result containsString:@"new"]){
-				
+			else if([menuChoice containsString:@"new"]){
+				Contact *newContact = [[Contact alloc] init];
+				newContact.name = [input inputForPrompt:@"Enter a Name:"];
+				newContact.email = [input inputForPrompt:@"Enter an Email:"];
+				[allContacts addContact: newContact];
 			}
-			else if([result containsString:@"list"]){
-				
+			else if([menuChoice containsString:@"list"]){
+				int i = 0;
+				for (Contact *item in allContacts.allContactsList) {
+					i++;
+					NSLog(@"%d: %@", i, item.name);
+				}
+				printf("\n");
 			}
 			else{
 				printf("Please give a valid option");
