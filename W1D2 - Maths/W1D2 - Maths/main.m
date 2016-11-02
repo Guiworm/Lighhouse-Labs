@@ -10,19 +10,23 @@
 #import "AdditionQuestion.h"
 #import "InputHandler.h"
 #import "ScoreKeeper.h"
+#import "QuestionManager.h"
 
 int main(int argc, const char * argv[]) {
 	@autoreleasepool {
 		BOOL gameOn = YES;
 		ScoreKeeper *userScore = [[ScoreKeeper alloc] init];
+		QuestionManager *allQuestions = [[QuestionManager alloc] init];
 		
 		NSLog(@"Type 'quit' to stop playing");
 		
 		while(gameOn){
 			AdditionQuestion *randQuestion = [[AdditionQuestion alloc] init];
 			NSLog(@"%@", randQuestion.question);
-						
+			[allQuestions.questions addObject: randQuestion];
+			
 			NSString *userAnswer = [InputHandler getInput];
+			
 			
 			if ([userAnswer isEqualToString:@"quit"]) {
 				gameOn = NO;
@@ -38,6 +42,8 @@ int main(int argc, const char * argv[]) {
 				userScore.wrongAnswers++;
 				NSLog(@"%@",userScore.score);
 			}
+			NSLog(@"%@\n\n", allQuestions.timeOutput);
+
 			
 		}
 	}

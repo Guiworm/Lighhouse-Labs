@@ -10,6 +10,11 @@
 
 @implementation AdditionQuestion
 
+-(NSInteger) answer{
+	_endTime = [NSDate date];
+	return _answer;
+}
+
 - (instancetype)init
 {
 	self = [super init];
@@ -18,8 +23,13 @@
 		NSInteger rand2 = arc4random_uniform(90) + 10;
 		_question = [NSString stringWithFormat:@"%ld + %ld?", (long)rand1, (long)rand2];
 		_answer = rand1 +rand2;
+		_startTime = [NSDate date];
 	}
 	return self;
+}
+
+-(NSTimeInterval) answerTime{
+	return [self.endTime timeIntervalSinceDate: self.startTime];
 }
 
 @end

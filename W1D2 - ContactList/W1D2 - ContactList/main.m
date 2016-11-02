@@ -45,7 +45,6 @@ int main(int argc, const char * argv[]) {
 			else{
 				printf("Please give a valid option");
 			}
-			
 		}
 	}
     return 0;
