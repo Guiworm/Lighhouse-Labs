@@ -18,14 +18,35 @@ int main(int argc, const char * argv[]) {
 		Dice *d4 = [[Dice alloc] init];
 		Dice *d5 = [[Dice alloc] init];
 		Dice *d6 = [[Dice alloc] init];
+		char userInput[255];
+		BOOL exit = NO;
 		
+		while(!exit){
+			NSLog(@"What would you like to do?\n"
+									"roll - roll all the dice\n"
+									"quit - Exit application\n");
+			
+			//get user input and convert it to an object
+			fgets(userInput, 255, stdin);
+			NSString *userText = [NSString stringWithCString:userInput
+													encoding:NSUTF8StringEncoding];
 		
-	    NSLog(@"D1: %ld", [d1 randomize]);
-		NSLog(@"D2: %ld", [d2 randomize]);
-		NSLog(@"D3: %ld", [d3 randomize]);
-		NSLog(@"D4: %ld", [d4 randomize]);
-		NSLog(@"D5: %ld", [d5 randomize]);
-		NSLog(@"D6: %ld", [d6 randomize]);
+			//re-roll all the dice
+			if([userText containsString: @"roll"]){
+				NSLog(@"D1: %@", [d1.dicePics objectAtIndex:[d1 randomize]-1]);
+				NSLog(@"D2: %@", [d2.dicePics objectAtIndex:[d2 randomize]-1]);
+				NSLog(@"D3: %@", [d3.dicePics objectAtIndex:[d3 randomize]-1]);
+				NSLog(@"D4: %@", [d4.dicePics objectAtIndex:[d4 randomize]-1]);
+				NSLog(@"D5: %@", [d5.dicePics objectAtIndex:[d5 randomize]-1]);
+				NSLog(@"D6: %@", [d6.dicePics objectAtIndex:[d6 randomize]-1]);
+			}
+			
+			//Quit
+			if([userText containsString:@"quit"]){
+					exit = YES;
+			}
+				
+		}
 		
 	}
     return 0;

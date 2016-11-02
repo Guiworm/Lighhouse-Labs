@@ -11,6 +11,7 @@
 @interface Dice : NSObject
 
 @property NSInteger currentValue;
+@property NSArray *dicePics;
 
 -(NSInteger)randomize;
 

@@ -10,6 +10,15 @@
 
 @implementation Dice
 
+- (instancetype)init
+{
+	self = [super init];
+	if (self) {
+		_dicePics = @[@"⚀", @"⚁", @"⚂", @"⚃", @"⚄", @"⚅"];
+	}
+	return self;
+}
+
 -(NSInteger)randomize{
 	//randomly set the currentValue and return it
 	self.currentValue = arc4random_uniform(6)+1;
