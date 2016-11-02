@@ -1,5 +1,5 @@
 //
-//  Dice.h
+//  GameController.h
 //  W1D3 - Treelow
 //
 //  Created by Dylan McCrindle on 2016-11-02.
@@ -7,12 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Dice.h"
 
-@interface Dice : NSObject
+@interface GameController : NSObject
 
-@property NSInteger currentValue;
-@property BOOL held;
+@property NSMutableArray *gameDice;
 
--(NSInteger)randomize;
+-(void) holdDie:(NSInteger)holdIt;
 
 @end
