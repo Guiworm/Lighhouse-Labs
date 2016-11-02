@@ -20,7 +20,7 @@
 }
 
 -(Question *)generateRandomQuestion{
-	return [[NSClassFromString(self.questionType[arc4random_uniform(3)]) alloc]init];
+	return [[NSClassFromString(self.questionType[arc4random_uniform(4)]) alloc]init];
 }
 
 @end
