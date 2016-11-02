@@ -23,7 +23,7 @@
 	CGFloat total = 0;
 	CGFloat average = 0;
 	int i = 0;
-	for (AdditionQuestion *item in self.questions) {
+	for (Question *item in self.questions) {
 		total += [item answerTime];
 		i++;
 	}

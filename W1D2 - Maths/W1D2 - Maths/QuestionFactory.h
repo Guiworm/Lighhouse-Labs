@@ -1,5 +1,5 @@
 //
-//  QuestionManager.h
+//  QuestionFactory.h
 //  W1D2 - Maths
 //
 //  Created by Dylan McCrindle on 2016-11-02.
@@ -9,11 +9,10 @@
 #import <Foundation/Foundation.h>
 #import "Question.h"
 
+@interface QuestionFactory : NSObject
 
-@interface QuestionManager : NSObject
+@property NSArray* questionType;
 
-@property NSMutableArray* questions;
-
--(NSString *) timeOutput;
+-(Question *)generateRandomQuestion;
 
 @end

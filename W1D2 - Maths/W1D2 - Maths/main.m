@@ -7,21 +7,25 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AdditionQuestion.h"
+#import "Question.h"
 #import "InputHandler.h"
 #import "ScoreKeeper.h"
 #import "QuestionManager.h"
+#import "QuestionFactory.h"
 
 int main(int argc, const char * argv[]) {
 	@autoreleasepool {
 		BOOL gameOn = YES;
 		ScoreKeeper *userScore = [[ScoreKeeper alloc] init];
 		QuestionManager *allQuestions = [[QuestionManager alloc] init];
+		QuestionFactory *questionFactory = [[QuestionFactory alloc] init];
 		
 		NSLog(@"Type 'quit' to stop playing");
 		
 		while(gameOn){
-			AdditionQuestion *randQuestion = [[AdditionQuestion alloc] init];
+			Question *randQuestion = questionFactory.generateRandomQuestion;
+			
+			
 			NSLog(@"%@", randQuestion.question);
 			[allQuestions.questions addObject: randQuestion];
 			
