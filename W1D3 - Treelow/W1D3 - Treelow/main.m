@@ -20,13 +20,13 @@ int main(int argc, const char * argv[]) {
 		Dice *d6 = [[Dice alloc] init];
 		
 		
+	    NSLog(@"D1: %ld", [d1 randomize]);
+		NSLog(@"D2: %ld", [d2 randomize]);
+		NSLog(@"D3: %ld", [d3 randomize]);
+		NSLog(@"D4: %ld", [d4 randomize]);
+		NSLog(@"D5: %ld", [d5 randomize]);
+		NSLog(@"D6: %ld", [d6 randomize]);
 		
-	    NSLog(@"D1: %ld", (long)d1.randomize);
-		NSLog(@"D1: %ld", (long)d2.randomize);
-		NSLog(@"D1: %ld", (long)d3.randomize);
-		NSLog(@"D1: %ld", (long)d4.randomize);
-		NSLog(@"D1: %ld", (long)d5.randomize);
-		NSLog(@"D1: %ld", (long)d6.randomize);
 	}
     return 0;
 }

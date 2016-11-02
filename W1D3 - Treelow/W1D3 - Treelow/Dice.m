@@ -11,7 +11,9 @@
 @implementation Dice
 
 -(NSInteger)randomize{
-	return self.currentValue = arc4random_uniform(1)+5;
+	//randomly set the currentValue and return it
+	self.currentValue = arc4random_uniform(6)+1;
+	return self.currentValue;
 }
 
 @end
