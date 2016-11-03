@@ -28,6 +28,7 @@
 		[doc acceptPatient:self];
 		return YES;
 	}
+	NSLog(@"%@ doesn't have a valid health card!", self.name);
 	return NO;
 }
 

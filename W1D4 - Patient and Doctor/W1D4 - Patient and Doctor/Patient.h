@@ -22,5 +22,4 @@
 - (BOOL) goToDoctor:(Doctor *)doc;
 - (Medication *) requestMedication:(Doctor *) doc;
 
-
 @end

@@ -21,6 +21,8 @@
 - (void) acceptPatient: (Patient *)patient;
 - (Medication *)giveMedication: (Patient *)patient;
 
+- (void) printInteraction: (Patient *) patient withMeds:(Medication *) meds;
++ (void) showListOfAvailableMeds: (Patient *)patient;
 
 
 @end
