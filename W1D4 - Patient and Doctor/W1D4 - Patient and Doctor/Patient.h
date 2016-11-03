@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Medication.h"
 
 @class Doctor;
 @interface Patient : NSObject
@@ -15,9 +16,11 @@
 @property NSString *name;
 @property int age;
 @property BOOL validHealthCard;
+@property NSString *symptom;
 
 - (instancetype)initWithName:(NSString *)name andAge:(int)age;
 - (BOOL) goToDoctor:(Doctor *)doc;
+- (Medication *) requestMedication:(Doctor *) doc;
 
 
 @end

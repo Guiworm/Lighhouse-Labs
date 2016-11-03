@@ -26,8 +26,33 @@
 	return patient.validHealthCard ? YES : NO;
 }
 
-//Accept Patient
+//Accept patient
 - (void) acceptPatient: (Patient *)patient{
 	[self.patientList addObject:patient];
 }
+
+//Give patient medication
+- (Medication *)giveMedication: (Patient *)patient{
+	
+	if([self.patientList containsObject:patient]){
+		if([patient.symptom isEqualToString: @"coughing"]){
+			Medication *coughDrops = [[Medication alloc] initWithName:@"Cough Drops" andDosage:10];
+			return coughDrops;
+		}
+		else if([patient.symptom isEqualToString: @"headache"]){
+			Medication *ibuprofen = [[Medication alloc] initWithName:@"Ibuprofen" andDosage:2];
+			return ibuprofen;
+		}
+		else if([patient.symptom isEqualToString: @"fever"]){
+			Medication *advil = [[Medication alloc] initWithName:@"Advil" andDosage:3];
+			return advil;
+		}
+		else{
+			Medication *tylenol = [[Medication alloc] initWithName:@"Tylenol" andDosage:5];
+			return tylenol;
+		}
+	}
+	return nil;
+}
+
 @end

@@ -18,6 +18,7 @@
 		_name = name;
 		_age = age;
 		_validHealthCard = YES;
+		_symptom = @"none";
 	}
 	return self;
 }
@@ -28,6 +29,10 @@
 		return YES;
 	}
 	return NO;
+}
+
+- (Medication *) requestMedication:(Doctor *) doc{
+	return [doc giveMedication:self];
 }
 
 @end
