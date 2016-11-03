@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "88CFF0B7ED9F0243AB3EBD8E5686EEC0A59B91A2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "88CFF0B7ED9F0243AB3EBD8E5686EEC0A59B91A2" : 9223372036854775807,
+    "54BED0417A9378A396C7B97D5A7E898E696ECF18" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7CCA9432-3339-4D10-AB2F-D2AB5F28234A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "88CFF0B7ED9F0243AB3EBD8E5686EEC0A59B91A2" : "Assignments\/",
+    "54BED0417A9378A396C7B97D5A7E898E696ECF18" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "W1D3 - Treelow",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "W1D3 - Treelow\/W1D3 - Treelow.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Guiworm\/Lighthouse.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "54BED0417A9378A396C7B97D5A7E898E696ECF18"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Guiworm\/Lighhouse-Labs.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "88CFF0B7ED9F0243AB3EBD8E5686EEC0A59B91A2"
+    }
+  ]
+}
