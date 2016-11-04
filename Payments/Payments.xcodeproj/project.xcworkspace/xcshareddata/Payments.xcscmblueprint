@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "88CFF0B7ED9F0243AB3EBD8E5686EEC0A59B91A2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "88CFF0B7ED9F0243AB3EBD8E5686EEC0A59B91A2" : 9223372036854775807,
+    "54BED0417A9378A396C7B97D5A7E898E696ECF18" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "07107D34-CEF9-4269-856E-7A68E9676B03",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "88CFF0B7ED9F0243AB3EBD8E5686EEC0A59B91A2" : "Assignments\/",
+    "54BED0417A9378A396C7B97D5A7E898E696ECF18" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Payments",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Payments\/Payments.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Guiworm\/Lighthouse.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "54BED0417A9378A396C7B97D5A7E898E696ECF18"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Guiworm\/Lighhouse-Labs.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "88CFF0B7ED9F0243AB3EBD8E5686EEC0A59B91A2"
+    }
+  ]
+}
