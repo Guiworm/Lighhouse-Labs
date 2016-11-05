@@ -20,8 +20,8 @@ int main(int argc, const char * argv[]) {
 		while(!exit){
 			printf("\nWhat would you like to do?\n"
 					"roll - roll all the dice\n"
-					"hold - hold/Unhold dice\n"
 				   	"reset - reset all dice holds\n"
+				   "unhold - reset all dice holds\n"
 					"quit - Exit application\n");
 			
 			//get user input and convert it to an object
@@ -32,12 +32,8 @@ int main(int argc, const char * argv[]) {
 			//re-roll all the dice
 			if([userText containsString: @"roll"]){
 				[allDice roll];
-			}
-			
-			//Hold dice
-			if([userText containsString: @"hold"]){
 				
-				NSLog(@"Hold at which indices(Separate by spaces)?\n");
+				NSLog(@"Which do you want to hold/unhold at which indices(Separate by spaces)?\n");
 				fgets(userInput, 255, stdin);
 				//convert chars to NSString
 				userText = [NSString stringWithCString:userInput encoding:NSUTF8StringEncoding];
@@ -45,7 +41,24 @@ int main(int argc, const char * argv[]) {
 				userText = [userText stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 				//separate numbers by space
 				NSArray *userHold = [userText componentsSeparatedByString:@" "];
+				
+				for(NSString *item in userHold){
+					[allDice holdDie: [item integerValue]];
+				}
 
+			}
+			
+			//Reset Dice
+			if([userText containsString:@"unhold"]){
+				NSLog(@"Which do you want to unhold at which indices(Separate by spaces)?\n");
+				fgets(userInput, 255, stdin);
+				//convert chars to NSString
+				userText = [NSString stringWithCString:userInput encoding:NSUTF8StringEncoding];
+				//strip newline and leading whitespace
+				userText = [userText stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+				//separate numbers by space
+				NSArray *userHold = [userText componentsSeparatedByString:@" "];
+				
 				for(NSString *item in userHold){
 					[allDice holdDie: [item integerValue]];
 				}

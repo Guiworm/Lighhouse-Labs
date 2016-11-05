@@ -50,6 +50,7 @@
 		}
 		i++;
 	}
+	[self score];
 }
 
 -(void)roll{
@@ -61,6 +62,17 @@
 	[self printDice];
 	
 }
+
+-(void) score{
+	int score = 0 ;
+	for(Dice *die in self.gameDice){
+		if(die.currentValue != 3){
+			score += die.currentValue;
+		}
+	}
+	NSLog(@"Your Score is %d", score);
+}
+
 
 
 @end

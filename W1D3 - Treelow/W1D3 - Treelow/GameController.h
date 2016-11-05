@@ -19,5 +19,6 @@
 -(void) printDice;
 -(void) reset;
 -(void) roll;
+-(void) score;
 
 @end
