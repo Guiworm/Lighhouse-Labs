@@ -16,8 +16,6 @@ int main(int argc, const char * argv[]) {
 		char userInput[255];
 		BOOL exit = NO;
 		GameController *allDice = [[GameController alloc] init];
-		NSArray *dicePics = @[@"⚀", @"⚁", @"⚂", @"⚃", @"⚄", @"⚅"];
-
 		
 		while(!exit){
 			printf("\nWhat would you like to do?\n"
@@ -33,14 +31,7 @@ int main(int argc, const char * argv[]) {
 		
 			//re-roll all the dice
 			if([userText containsString: @"roll"]){
-				for (int i = 0; i < 5; i++) {
-					if([[allDice.gameDice objectAtIndex:i] held] == NO){
-						NSLog(@"%@", [dicePics objectAtIndex:[[allDice.gameDice objectAtIndex:i] randomize]-1]);
-					}
-					else{
-						NSLog(@"[%@]", [dicePics objectAtIndex:[[allDice.gameDice objectAtIndex:i] randomize]-1]);
-					}
-				}
+				[allDice roll];
 			}
 			
 			//Hold dice

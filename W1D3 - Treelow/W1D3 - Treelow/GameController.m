@@ -14,6 +14,9 @@
 {
 	self = [super init];
 	if (self) {
+
+		_dicePics = @[@"⚀", @"⚁", @"⚂", @"⚃", @"⚄", @"⚅"];
+
 		_gameDice = [NSMutableArray new];
 		
 		//Add 5 dice to the array of dice
@@ -34,6 +37,29 @@
 	for (Dice *die in self.gameDice) {
 		die.held = (die.held = NO);
 	}
+}
+
+-(void) printDice{
+	int i = 0;
+	for (Dice *die in self.gameDice) {
+		if(die.held == NO){
+			NSLog(@"%@", [self.dicePics objectAtIndex:die.currentValue-1]);
+		}
+		else{
+			NSLog(@"[%@]", [self.dicePics objectAtIndex:die.currentValue-1]);
+		}
+		i++;
+	}
+}
+
+-(void)roll{
+	
+	for(Dice *die in self.gameDice){
+		if(!die.held)
+			[die randomize];
+	}
+	[self printDice];
+	
 }
 
 

@@ -12,8 +12,12 @@
 @interface GameController : NSObject
 
 @property NSMutableArray *gameDice;
+@property NSArray *dicePics;
+
 
 -(void) holdDie:(NSInteger)holdIt;
+-(void) printDice;
 -(void) reset;
+-(void) roll;
 
 @end
