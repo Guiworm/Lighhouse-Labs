@@ -35,12 +35,7 @@ int main(int argc, const char * argv[]) {
 				[allContacts addContact: newContact];
 			}
 			else if([menuChoice containsString:@"list"]){
-				int i = 0;
-				for (Contact *item in allContacts.allContactsList) {
-					i++;
-					NSLog(@"%d: %@", i, item.name);
-				}
-				printf("\n");
+				[allContacts printContacts];
 			}
 			else{
 				printf("Please give a valid option");

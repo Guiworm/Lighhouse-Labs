@@ -24,6 +24,15 @@
 	[self.allContactsList addObject:newContact];
 }
 
+-(void)printContacts{
+	int i = 0;
+	for (Contact *item in self.allContactsList) {
+		i++;
+		NSLog(@"%d: %@", i, item.name);
+	}
+	printf("\n");
+}
+
 
 
 @end

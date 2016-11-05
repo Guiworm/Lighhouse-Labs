@@ -14,5 +14,6 @@
 @property NSMutableArray *allContactsList;
 
 -(void)addContact:(Contact *)newContact;
+-(void)printContacts;
 
 @end
