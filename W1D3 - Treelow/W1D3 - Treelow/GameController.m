@@ -26,8 +26,14 @@
 }
 
 -(void) holdDie:(NSInteger)holdIt{
-	Dice *dieObject = [self.gameDice objectAtIndex:0];
-	dieObject.held = YES;
+	Dice *dieObject = [self.gameDice objectAtIndex:holdIt];
+	dieObject.held ? (dieObject.held = NO) : (dieObject.held = YES);
+}
+
+-(void) reset{
+	for (Dice *die in self.gameDice) {
+		die.held = (die.held = NO);
+	}
 }
 
 

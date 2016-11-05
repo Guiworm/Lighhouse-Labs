@@ -21,8 +21,13 @@
 
 -(NSInteger)randomize{
 	//randomly set the currentValue and return it
-	self.currentValue = arc4random_uniform(6)+1;
-	return self.currentValue;
+	if(self.held){
+		return self.currentValue;
+	}
+	else{
+		self.currentValue = arc4random_uniform(6)+1;
+		return self.currentValue;
+	}
 }
 
 @end

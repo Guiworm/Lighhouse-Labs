@@ -22,7 +22,8 @@ int main(int argc, const char * argv[]) {
 		while(!exit){
 			printf("\nWhat would you like to do?\n"
 					"roll - roll all the dice\n"
-					"hold - hold the dice\n"
+					"hold - hold/Unhold dice\n"
+				   	"reset - reset all dice holds\n"
 					"quit - Exit application\n");
 			
 			//get user input and convert it to an object
@@ -33,7 +34,7 @@ int main(int argc, const char * argv[]) {
 			//re-roll all the dice
 			if([userText containsString: @"roll"]){
 				for (int i = 0; i < 5; i++) {
-					if([dicePics objectAtIndex:[[allDice.gameDice objectAtIndex:i] held]] == NO){
+					if([[allDice.gameDice objectAtIndex:i] held] == NO){
 						NSLog(@"%@", [dicePics objectAtIndex:[[allDice.gameDice objectAtIndex:i] randomize]-1]);
 					}
 					else{
@@ -44,8 +45,24 @@ int main(int argc, const char * argv[]) {
 			
 			//Hold dice
 			if([userText containsString: @"hold"]){
-				Dice diceObject = [allDice.gameDice objectAtIndex:0];
-				diceObject.holdDie:0;
+				
+				NSLog(@"Hold at which indices(Separate by spaces)?\n");
+				fgets(userInput, 255, stdin);
+				//convert chars to NSString
+				userText = [NSString stringWithCString:userInput encoding:NSUTF8StringEncoding];
+				//strip newline and leading whitespace
+				userText = [userText stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+				//separate numbers by space
+				NSArray *userHold = [userText componentsSeparatedByString:@" "];
+
+				for(NSString *item in userHold){
+					[allDice holdDie: [item integerValue]];
+				}
+			}
+			
+			//Reset Dice
+			if([userText containsString:@"reset"]){
+				[allDice reset];
 			}
 			
 			//Quit

@@ -14,5 +14,6 @@
 @property NSMutableArray *gameDice;
 
 -(void) holdDie:(NSInteger)holdIt;
+-(void) reset;
 
 @end
