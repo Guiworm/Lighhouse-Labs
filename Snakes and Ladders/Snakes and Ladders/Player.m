@@ -15,6 +15,7 @@
 	self = [super init];
 	if (self) {
 		_currentSpace = 0;
+		_gameOver = NO;
 		_gameLogic = @{@(4):@(14),
 					   @(9):@(31),
 					   [NSNumber numberWithInt:17]:[NSNumber numberWithInt:7],
@@ -51,8 +52,13 @@
 	
 	else{
 		self.currentSpace += dieRoll;
-		NSLog(@"You are on space %ld", self.currentSpace);
 
+		if(self.currentSpace >= 100){
+			self.gameOver = YES;
+		}
+		else{
+			NSLog(@"You are on space %ld", self.currentSpace);
+		}
 	}
 
 	

@@ -11,6 +11,7 @@
 @interface Player : NSObject
 
 @property NSInteger currentSpace;
+@property BOOL gameOver;
 @property NSDictionary *gameLogic;
 
 -(void) roll;

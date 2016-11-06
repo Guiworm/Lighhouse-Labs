@@ -17,7 +17,7 @@ int main(int argc, const char * argv[]) {
 		NSLog(@"WELCOME TO SNAKES AND LADDERS");
 		NSLog(@"Start playing by typing Roll or R");
 
-		while (YES) {
+		while (!player1.gameOver) {
 			fgets(userChars, 255, stdin);
 			NSString *userInput = [NSString stringWithCString:userChars encoding:NSUTF8StringEncoding];
 			
@@ -27,6 +27,7 @@ int main(int argc, const char * argv[]) {
 				[player1 roll];
 			}
 		}
+		NSLog(@"Congratulations! You Win!");
 	}
     return 0;
 }
