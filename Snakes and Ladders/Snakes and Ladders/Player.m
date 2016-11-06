@@ -37,15 +37,15 @@
 	
 	
 	NSInteger dieRoll = arc4random_uniform(6)+1;
-	NSLog(@"You rolled a %ld", dieRoll);
+	NSLog(@"%@ rolled a %ld", self.name, dieRoll);
 
 	if ([self.gameLogic objectForKey: @(self.currentSpace + dieRoll)] != nil){
 		NSInteger goTo =[[self.gameLogic objectForKey:@(self.currentSpace + dieRoll)] integerValue];
 		if (goTo > self.currentSpace) {
-			NSLog(@"Ladder! You jump from %ld to %ld", self.currentSpace+dieRoll, goTo);
+			NSLog(@"Ladder! %@ jumps from %ld to %ld", self.name, self.currentSpace+dieRoll, goTo);
 		}
 		else{
-			NSLog(@"Snake! Slide down from %ld to %ld", self.currentSpace+dieRoll, goTo);
+			NSLog(@"Snake! %@ slides down from %ld to %ld", self.name, self.currentSpace+dieRoll, goTo);
 		}
 		self.currentSpace = goTo;
 	}
@@ -57,11 +57,9 @@
 			self.gameOver = YES;
 		}
 		else{
-			NSLog(@"You are on space %ld", self.currentSpace);
+			NSLog(@"%@ is on space %ld", self.name, self.currentSpace);
 		}
 	}
-
-	
 }
 
 @end

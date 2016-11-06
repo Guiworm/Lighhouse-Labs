@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		A04E21311DCED6C100E5D476 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A04E21301DCED6C100E5D476 /* main.m */; };
 		A04E21391DCED8A400E5D476 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = A04E21381DCED8A400E5D476 /* Player.m */; };
+		A0BFED851DCF845B0023B283 /* PlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A0BFED841DCF845B0023B283 /* PlayerManager.m */; };
+		A0BFED881DCF99370023B283 /* InputManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A0BFED871DCF99370023B283 /* InputManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +30,10 @@
 		A04E21301DCED6C100E5D476 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A04E21371DCED8A400E5D476 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 		A04E21381DCED8A400E5D476 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		A0BFED831DCF845B0023B283 /* PlayerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerManager.h; sourceTree = "<group>"; };
+		A0BFED841DCF845B0023B283 /* PlayerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerManager.m; sourceTree = "<group>"; };
+		A0BFED861DCF99370023B283 /* InputManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputManager.h; sourceTree = "<group>"; };
+		A0BFED871DCF99370023B283 /* InputManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,10 @@
 			isa = PBXGroup;
 			children = (
 				A04E21301DCED6C100E5D476 /* main.m */,
+				A0BFED861DCF99370023B283 /* InputManager.h */,
+				A0BFED871DCF99370023B283 /* InputManager.m */,
+				A0BFED831DCF845B0023B283 /* PlayerManager.h */,
+				A0BFED841DCF845B0023B283 /* PlayerManager.m */,
 				A04E21371DCED8A400E5D476 /* Player.h */,
 				A04E21381DCED8A400E5D476 /* Player.m */,
 			);
@@ -124,8 +134,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0BFED881DCF99370023B283 /* InputManager.m in Sources */,
 				A04E21391DCED8A400E5D476 /* Player.m in Sources */,
 				A04E21311DCED6C100E5D476 /* main.m in Sources */,
+				A0BFED851DCF845B0023B283 /* PlayerManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +264,7 @@
 				A04E21361DCED6C100E5D476 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

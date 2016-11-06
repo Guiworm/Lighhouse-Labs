@@ -12,6 +12,7 @@
 
 @property NSInteger currentSpace;
 @property BOOL gameOver;
+@property NSString *name;
 @property NSDictionary *gameLogic;
 
 -(void) roll;
