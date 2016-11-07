@@ -44,6 +44,7 @@ int main(int argc, const char * argv[]) {
 					[playerManager roll];
 				}
 			}
+			
 			NSLog(@"Restart? (Y/N)");
 			userInput = [InputManager userInput];
 			([userInput  isEqual: @"y"]) ? (continueGame = YES) : (continueGame = NO);
