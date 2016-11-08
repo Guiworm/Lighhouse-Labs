@@ -20,6 +20,8 @@
 
 		_players = @[player1, player2];
 		_isPlayer2 = NO;
+		_gameOver = NO;
+		
 	}
 	return self;
 }
@@ -55,6 +57,13 @@
 
 -(NSString *)getScore{
 	return [NSString stringWithFormat:@"Player %d: %ld", self.isPlayer2+1, [[self.players objectAtIndex:self.isPlayer2] score]];
+}
+
+-(NSInteger)getLives{
+	if([[self.players objectAtIndex:self.isPlayer2] lives] == 0){
+		self.gameOver = YES;
+	}
+	return [[self.players objectAtIndex:self.isPlayer2] lives];
 }
 
 @end

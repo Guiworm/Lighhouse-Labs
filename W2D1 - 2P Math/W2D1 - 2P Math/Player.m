@@ -25,7 +25,7 @@
 }
 
 -(void)wrongQuestion{
-	self.lives++;
+	self.lives--;
 }
 
 @end

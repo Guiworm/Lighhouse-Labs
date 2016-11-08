@@ -21,6 +21,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *playerTwoScoreLabel;
 @property (weak, nonatomic) IBOutlet UILabel *questionLabel;
 @property (weak, nonatomic) IBOutlet UILabel *answerLabel;
+@property (weak, nonatomic) IBOutlet UILabel *gameOverLabel;
 
 @property (nonatomic) IBOutletCollection(UIButton) NSArray* numberButtons;
 @property (nonatomic) NSMutableString *userAnswer;
@@ -59,7 +60,6 @@
 	[self.questionLabel sizeToFit];
 	[self.userAnswer setString:@""];
 	self.answerLabel.text = @"";
-
 }
 
 - (IBAction)enterPush:(UIButton *)sender {
@@ -70,13 +70,15 @@
 		[self.playerOneScoreLabel sizeToFit];
 	}
 	else{
-		NSString *string = [self.gameLogic getScore];
 		self.playerTwoScoreLabel.text = [self.gameLogic getScore];
 		[self.playerTwoScoreLabel sizeToFit];
 	}
+	[self.gameLogic getLives];
+	if(self.gameLogic.gameOver == YES){
+		self.gameOverLabel.hidden = NO;
+
+	}
 	
-
-
 	self.gameLogic.isPlayer2 = !self.gameLogic.isPlayer2;
 	[self makeQuestion];
 }
@@ -85,6 +87,8 @@
 	self.gameLogic = [GameController new];
 	[self makeQuestion];
 	self.userAnswer = [NSMutableString new];
+	self.gameOverLabel.hidden = YES;
+
 }
 
 @end

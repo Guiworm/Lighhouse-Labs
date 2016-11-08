@@ -14,10 +14,12 @@
 @property NSInteger answer;
 @property NSArray *players;
 @property BOOL isPlayer2;
+@property BOOL gameOver;
 
 -(void)scoreIt:(NSString *)userInput;
 -(void)makeQuestion;
 -(NSString *)getScore;
+-(NSInteger)getLives;
 
 @end
 
