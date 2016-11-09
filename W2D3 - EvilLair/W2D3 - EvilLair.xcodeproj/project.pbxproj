@@ -1,0 +1,382 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A0F5836C1DD3C0DE00F5762D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F5836B1DD3C0DE00F5762D /* main.m */; };
+		A0F5836F1DD3C0DE00F5762D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F5836E1DD3C0DE00F5762D /* AppDelegate.m */; };
+		A0F583721DD3C0DE00F5762D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F583711DD3C0DE00F5762D /* ViewController.m */; };
+		A0F583751DD3C0DE00F5762D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0F583731DD3C0DE00F5762D /* Main.storyboard */; };
+		A0F583771DD3C0DE00F5762D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0F583761DD3C0DE00F5762D /* Assets.xcassets */; };
+		A0F5837A1DD3C0DE00F5762D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0F583781DD3C0DE00F5762D /* LaunchScreen.storyboard */; };
+		A0F583921DD3E05600F5762D /* back_porch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A0F583831DD3E05600F5762D /* back_porch.jpg */; };
+		A0F583931DD3E05600F5762D /* bathroom.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A0F583841DD3E05600F5762D /* bathroom.jpg */; };
+		A0F583941DD3E05600F5762D /* bedroom.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A0F583851DD3E05600F5762D /* bedroom.jpg */; };
+		A0F583951DD3E05600F5762D /* coat_room.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A0F583861DD3E05600F5762D /* coat_room.jpg */; };
+		A0F583961DD3E05600F5762D /* cursed_chalice.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A0F583871DD3E05600F5762D /* cursed_chalice.jpg */; };
+		A0F583971DD3E05600F5762D /* dining_room.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A0F583881DD3E05600F5762D /* dining_room.jpg */; };
+		A0F583981DD3E05600F5762D /* dungeon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A0F583891DD3E05600F5762D /* dungeon.jpg */; };
+		A0F583991DD3E05600F5762D /* front_door.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A0F5838A1DD3E05600F5762D /* front_door.jpg */; };
+		A0F5839A1DD3E05600F5762D /* generator.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A0F5838B1DD3E05600F5762D /* generator.jpg */; };
+		A0F5839B1DD3E05600F5762D /* kitchen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A0F5838C1DD3E05600F5762D /* kitchen.jpg */; };
+		A0F5839C1DD3E05600F5762D /* labratory.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A0F5838D1DD3E05600F5762D /* labratory.jpg */; };
+		A0F5839D1DD3E05600F5762D /* library.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A0F5838E1DD3E05600F5762D /* library.jpg */; };
+		A0F5839E1DD3E05600F5762D /* mysterious_lake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A0F5838F1DD3E05600F5762D /* mysterious_lake.jpg */; };
+		A0F5839F1DD3E05600F5762D /* secret_passage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A0F583901DD3E05600F5762D /* secret_passage.jpg */; };
+		A0F583A01DD3E05600F5762D /* stairs_up.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A0F583911DD3E05600F5762D /* stairs_up.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A0F583671DD3C0DE00F5762D /* W2D3 - EvilLair.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "W2D3 - EvilLair.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0F5836B1DD3C0DE00F5762D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A0F5836D1DD3C0DE00F5762D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A0F5836E1DD3C0DE00F5762D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A0F583701DD3C0DE00F5762D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A0F583711DD3C0DE00F5762D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A0F583741DD3C0DE00F5762D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A0F583761DD3C0DE00F5762D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A0F583791DD3C0DE00F5762D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A0F5837B1DD3C0DE00F5762D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0F583831DD3E05600F5762D /* back_porch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = back_porch.jpg; sourceTree = "<group>"; };
+		A0F583841DD3E05600F5762D /* bathroom.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bathroom.jpg; sourceTree = "<group>"; };
+		A0F583851DD3E05600F5762D /* bedroom.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bedroom.jpg; sourceTree = "<group>"; };
+		A0F583861DD3E05600F5762D /* coat_room.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = coat_room.jpg; sourceTree = "<group>"; };
+		A0F583871DD3E05600F5762D /* cursed_chalice.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cursed_chalice.jpg; sourceTree = "<group>"; };
+		A0F583881DD3E05600F5762D /* dining_room.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dining_room.jpg; sourceTree = "<group>"; };
+		A0F583891DD3E05600F5762D /* dungeon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dungeon.jpg; sourceTree = "<group>"; };
+		A0F5838A1DD3E05600F5762D /* front_door.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = front_door.jpg; sourceTree = "<group>"; };
+		A0F5838B1DD3E05600F5762D /* generator.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = generator.jpg; sourceTree = "<group>"; };
+		A0F5838C1DD3E05600F5762D /* kitchen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kitchen.jpg; sourceTree = "<group>"; };
+		A0F5838D1DD3E05600F5762D /* labratory.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = labratory.jpg; sourceTree = "<group>"; };
+		A0F5838E1DD3E05600F5762D /* library.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = library.jpg; sourceTree = "<group>"; };
+		A0F5838F1DD3E05600F5762D /* mysterious_lake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mysterious_lake.jpg; sourceTree = "<group>"; };
+		A0F583901DD3E05600F5762D /* secret_passage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = secret_passage.jpg; sourceTree = "<group>"; };
+		A0F583911DD3E05600F5762D /* stairs_up.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stairs_up.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0F583641DD3C0DE00F5762D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A0F5835E1DD3C0DE00F5762D = {
+			isa = PBXGroup;
+			children = (
+				A0F583691DD3C0DE00F5762D /* W2D3 - EvilLair */,
+				A0F583681DD3C0DE00F5762D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A0F583681DD3C0DE00F5762D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0F583671DD3C0DE00F5762D /* W2D3 - EvilLair.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0F583691DD3C0DE00F5762D /* W2D3 - EvilLair */ = {
+			isa = PBXGroup;
+			children = (
+				A0F5836D1DD3C0DE00F5762D /* AppDelegate.h */,
+				A0F5836E1DD3C0DE00F5762D /* AppDelegate.m */,
+				A0F583701DD3C0DE00F5762D /* ViewController.h */,
+				A0F583711DD3C0DE00F5762D /* ViewController.m */,
+				A0F583731DD3C0DE00F5762D /* Main.storyboard */,
+				A0F583761DD3C0DE00F5762D /* Assets.xcassets */,
+				A0F583A11DD3E06600F5762D /* img */,
+				A0F583781DD3C0DE00F5762D /* LaunchScreen.storyboard */,
+				A0F5837B1DD3C0DE00F5762D /* Info.plist */,
+				A0F5836A1DD3C0DE00F5762D /* Supporting Files */,
+			);
+			path = "W2D3 - EvilLair";
+			sourceTree = "<group>";
+		};
+		A0F5836A1DD3C0DE00F5762D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A0F5836B1DD3C0DE00F5762D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A0F583A11DD3E06600F5762D /* img */ = {
+			isa = PBXGroup;
+			children = (
+				A0F583831DD3E05600F5762D /* back_porch.jpg */,
+				A0F583841DD3E05600F5762D /* bathroom.jpg */,
+				A0F583851DD3E05600F5762D /* bedroom.jpg */,
+				A0F583861DD3E05600F5762D /* coat_room.jpg */,
+				A0F583871DD3E05600F5762D /* cursed_chalice.jpg */,
+				A0F583881DD3E05600F5762D /* dining_room.jpg */,
+				A0F583891DD3E05600F5762D /* dungeon.jpg */,
+				A0F5838A1DD3E05600F5762D /* front_door.jpg */,
+				A0F5838B1DD3E05600F5762D /* generator.jpg */,
+				A0F5838C1DD3E05600F5762D /* kitchen.jpg */,
+				A0F5838D1DD3E05600F5762D /* labratory.jpg */,
+				A0F5838E1DD3E05600F5762D /* library.jpg */,
+				A0F5838F1DD3E05600F5762D /* mysterious_lake.jpg */,
+				A0F583901DD3E05600F5762D /* secret_passage.jpg */,
+				A0F583911DD3E05600F5762D /* stairs_up.jpg */,
+			);
+			name = img;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A0F583661DD3C0DE00F5762D /* W2D3 - EvilLair */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0F5837E1DD3C0DE00F5762D /* Build configuration list for PBXNativeTarget "W2D3 - EvilLair" */;
+			buildPhases = (
+				A0F583631DD3C0DE00F5762D /* Sources */,
+				A0F583641DD3C0DE00F5762D /* Frameworks */,
+				A0F583651DD3C0DE00F5762D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "W2D3 - EvilLair";
+			productName = "W2D3 - EvilLair";
+			productReference = A0F583671DD3C0DE00F5762D /* W2D3 - EvilLair.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0F5835F1DD3C0DE00F5762D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Dylan McCrindle";
+				TargetAttributes = {
+					A0F583661DD3C0DE00F5762D = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A0F583621DD3C0DE00F5762D /* Build configuration list for PBXProject "W2D3 - EvilLair" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A0F5835E1DD3C0DE00F5762D;
+			productRefGroup = A0F583681DD3C0DE00F5762D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0F583661DD3C0DE00F5762D /* W2D3 - EvilLair */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A0F583651DD3C0DE00F5762D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0F583A01DD3E05600F5762D /* stairs_up.jpg in Resources */,
+				A0F5837A1DD3C0DE00F5762D /* LaunchScreen.storyboard in Resources */,
+				A0F583921DD3E05600F5762D /* back_porch.jpg in Resources */,
+				A0F5839E1DD3E05600F5762D /* mysterious_lake.jpg in Resources */,
+				A0F583771DD3C0DE00F5762D /* Assets.xcassets in Resources */,
+				A0F583751DD3C0DE00F5762D /* Main.storyboard in Resources */,
+				A0F583971DD3E05600F5762D /* dining_room.jpg in Resources */,
+				A0F5839B1DD3E05600F5762D /* kitchen.jpg in Resources */,
+				A0F583941DD3E05600F5762D /* bedroom.jpg in Resources */,
+				A0F583951DD3E05600F5762D /* coat_room.jpg in Resources */,
+				A0F5839C1DD3E05600F5762D /* labratory.jpg in Resources */,
+				A0F583931DD3E05600F5762D /* bathroom.jpg in Resources */,
+				A0F5839D1DD3E05600F5762D /* library.jpg in Resources */,
+				A0F583981DD3E05600F5762D /* dungeon.jpg in Resources */,
+				A0F583961DD3E05600F5762D /* cursed_chalice.jpg in Resources */,
+				A0F583991DD3E05600F5762D /* front_door.jpg in Resources */,
+				A0F5839F1DD3E05600F5762D /* secret_passage.jpg in Resources */,
+				A0F5839A1DD3E05600F5762D /* generator.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0F583631DD3C0DE00F5762D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0F583721DD3C0DE00F5762D /* ViewController.m in Sources */,
+				A0F5836F1DD3C0DE00F5762D /* AppDelegate.m in Sources */,
+				A0F5836C1DD3C0DE00F5762D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A0F583731DD3C0DE00F5762D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0F583741DD3C0DE00F5762D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A0F583781DD3C0DE00F5762D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0F583791DD3C0DE00F5762D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A0F5837C1DD3C0DE00F5762D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A0F5837D1DD3C0DE00F5762D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A0F5837F1DD3C0DE00F5762D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "W2D3 - EvilLair/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "DM.W2D3---EvilLair";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A0F583801DD3C0DE00F5762D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "W2D3 - EvilLair/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "DM.W2D3---EvilLair";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A0F583621DD3C0DE00F5762D /* Build configuration list for PBXProject "W2D3 - EvilLair" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0F5837C1DD3C0DE00F5762D /* Debug */,
+				A0F5837D1DD3C0DE00F5762D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0F5837E1DD3C0DE00F5762D /* Build configuration list for PBXNativeTarget "W2D3 - EvilLair" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0F5837F1DD3C0DE00F5762D /* Debug */,
+				A0F583801DD3C0DE00F5762D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A0F5835F1DD3C0DE00F5762D /* Project object */;
+}

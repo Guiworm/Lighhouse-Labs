@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "88CFF0B7ED9F0243AB3EBD8E5686EEC0A59B91A2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "88CFF0B7ED9F0243AB3EBD8E5686EEC0A59B91A2" : 9223372036854775807,
+    "54BED0417A9378A396C7B97D5A7E898E696ECF18" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "0B223E62-CFA9-41EF-AAE8-02974B88F3F0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "88CFF0B7ED9F0243AB3EBD8E5686EEC0A59B91A2" : "Assignments\/",
+    "54BED0417A9378A396C7B97D5A7E898E696ECF18" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "W1D4 - Patient and Doctor",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "W1D4 - Patient and Doctor\/W1D4 - Patient and Doctor.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Guiworm\/Lighthouse.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "54BED0417A9378A396C7B97D5A7E898E696ECF18"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Guiworm\/Lighhouse-Labs.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "88CFF0B7ED9F0243AB3EBD8E5686EEC0A59B91A2"
+    }
+  ]
+}
