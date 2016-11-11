@@ -11,6 +11,7 @@
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UITextField *billAmountTextField;
+@property (weak, nonatomic) IBOutlet UILabel *tipOutput;
 
 @end
 
@@ -21,10 +22,11 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
+- (IBAction)calculateTip:(UIButton *)sender {
+	CGFloat tip = [self.billAmountTextField.text integerValue] * 0.15;
+	
+	self.tipOutput.text = [NSString stringWithFormat:@"A 15%% tip should be $%.2f", tip];
 
-- (void)didReceiveMemoryWarning {
-	[super didReceiveMemoryWarning];
-	// Dispose of any resources that can be recreated.
 }
 
 
