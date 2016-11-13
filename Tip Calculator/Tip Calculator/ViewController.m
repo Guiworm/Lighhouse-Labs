@@ -8,7 +8,8 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <UITextFieldDelegate>
+@property (weak, nonatomic) IBOutlet UITextField *percentage;
 
 @property (weak, nonatomic) IBOutlet UITextField *billAmountTextField;
 @property (weak, nonatomic) IBOutlet UILabel *tipOutput;
@@ -19,14 +20,33 @@
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	self.billAmountTextField.delegate = self;
+
 }
 
 - (IBAction)calculateTip:(UIButton *)sender {
-	CGFloat tip = [self.billAmountTextField.text integerValue] * 0.15;
 	
-	self.tipOutput.text = [NSString stringWithFormat:@"A 15%% tip should be $%.2f", tip];
+	if([self.percentage.text isEqualToString:@""]){
+		self.percentage.text = [NSString stringWithFormat:@"15"];
+	}
+	
+	CGFloat tip = [self.billAmountTextField.text integerValue] * ([self.percentage.text floatValue]/100);
+	
+	self.tipOutput.text = [NSString stringWithFormat:@"A %@%% tip should be $%.2f", self.percentage.text,tip];
 
+}
+
+//- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
+//	NSString *currentText = textField.text;
+//	NSString *newText = [currentText stringByReplacingCharactersInRange:range withString:string];
+//	self.tipOutput.text = [NSString stringWithFormat:@"You typed: %@", newText];
+//	
+//	return YES;
+//}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+	[textField resignFirstResponder];
+	return NO;
 }
 
 
